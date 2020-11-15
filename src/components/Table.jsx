@@ -1,12 +1,9 @@
 import React from "react";
 import Button from "./Button";
 
-const isSearched = string => item =>
-  item.title.toLowerCase().includes(string.toLowerCase());
-
-const Table = ({ list, onDismiss, pattern }) => (
+const Table = ({ list, onDismiss }) => (
   <div className="table">
-    {list.filter(isSearched(pattern)).map(item => (
+    {list.map(item => (
       <div key={item.objectID} className="table-row">
         <span style={{ width: "40%" }}>
           <a href={item.url}>{item.title}</a>
@@ -18,7 +15,9 @@ const Table = ({ list, onDismiss, pattern }) => (
           <Button
             candApesiClick={() => onDismiss(item.objectID)}
             className="button-inline"
-          />
+          >
+            Dismiss
+          </Button>
         </span>
       </div>
     ))}
