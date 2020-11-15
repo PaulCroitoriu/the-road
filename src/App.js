@@ -6,11 +6,13 @@ import Table from "./components/Table";
 import Button from "./components/Button";
 
 const DEFAULT_QUERY = "redux";
+const DEFAULT_HPP = "100";
 
 const PATH_BASE = "https://hn.algolia.com/api/v1/";
 const PATH_SEARCH = "/search";
 const PARAM_SEARCH = "query=";
 const PARAM_PAGE = "page=";
+const PARAM_HPP = "hitsPerPage=";
 
 class App extends React.Component {
   constructor(props) {
@@ -22,22 +24,29 @@ class App extends React.Component {
     };
   }
 
-  // setSearchTopStories = result => {
-  //   this.setState({ result });
-  // };
+  setSearchTopStories = result => {
+    // destructuring hits and page from the result state
+    const { hits, page } = result;
 
-  fetchSearchTopStories = (searchTerm, page = 3) => {
+    const oldHits = page !== 0 ? this.state.result.hits : [];
+
+    const updatedHits = [...oldHits, ...hits];
+
+    this.setState({ result: { hits: updatedHits, page } });
+  };
+
+  // method to fetch data from api
+  fetchSearchTopStories = (searchTerm, page = 0) => {
     fetch(
-      `${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}&${PARAM_PAGE}${page}`
+      `${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}&${PARAM_PAGE}${page}&${PARAM_HPP}${DEFAULT_HPP}`
     )
       .then(response => response.json())
-      .then(result => {
-        this.setState({ result });
-      })
+      .then(result => this.setSearchTopStories(result))
       .catch(error => error);
   };
 
   componentDidMount() {
+    // update state
     this.fetchSearchTopStories(this.state.searchTerm);
   }
 
@@ -57,6 +66,7 @@ class App extends React.Component {
     event.preventDefault();
   };
 
+  // input handler
   onSearchChange = event => {
     this.setState({ searchTerm: event.target.value });
   };
