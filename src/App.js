@@ -1,6 +1,8 @@
 import "./App.css";
 import React from "react";
 
+import axios from "axios";
+
 import Search from "./components/Search";
 import Table from "./components/Table";
 import Button from "./components/Button";
@@ -52,11 +54,10 @@ class App extends React.Component {
 
   // method to fetch data from api
   fetchSearchTopStories = (searchTerm, page = 0) => {
-    fetch(
+    axios(
       `${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}&${PARAM_PAGE}${page}&${PARAM_HPP}${DEFAULT_HPP}`
     )
-      .then(response => response.json())
-      .then(result => this.setSearchTopStories(result))
+      .then(result => this.setSearchTopStories(result.data))
       .catch(error => this.setState({ error }));
   };
 
