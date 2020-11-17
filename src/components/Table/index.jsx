@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button";
+import Button from "../Button";
 
 const Table = ({ list, onDismiss }) => (
   <div className="table">
@@ -14,9 +14,9 @@ const Table = ({ list, onDismiss }) => (
         <span style={{ width: "10%" }}>
           <Button
             candApesiClick={() => onDismiss(item.objectID)}
-            className="button-inline"
+            className="button-inline "
           >
-            Dismiss
+            <i className="trash alternate outline icon"></i>
           </Button>
         </span>
       </div>

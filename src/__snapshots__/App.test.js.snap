@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App has a valid snopshot 1`] = `
+<div
+  className="page"
+>
+  <div
+    className="interactions"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="ui category search"
+      >
+        <input
+          onChange={[Function]}
+          placeholder="Search..."
+          type="text"
+          value=""
+        />
+        <button
+          className="ui secondary button"
+          onClick={[Function]}
+          type="button"
+        >
+          Search
+        </button>
+      </div>
+    </form>
+  </div>
+  <div
+    className="table"
+  />
+  <div
+    className="interactions"
+  >
+    <button
+      className="ui secondary button"
+      onClick={[Function]}
+      type="button"
+    >
+      More
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Button has a valid snopshot 1`] = `
+<button
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`Search has a valid snopshot 1`] = `
+<form>
+  <div
+    className="ui category search"
+  >
+    <input
+      placeholder="Search..."
+      type="text"
+    />
+    <button
+      className="ui secondary button"
+      type="button"
+    >
+      Search
+    </button>
+  </div>
+</form>
+`;
+
+exports[`Table has a valid snapshot 1`] = `
+<div
+  className="table"
+>
+  <div
+    className="table-row"
+  >
+    <span
+      style={
+        Object {
+          "width": "40%",
+        }
+      }
+    >
+      <a>
+        1
+      </a>
+    </span>
+    <span
+      style={
+        Object {
+          "width": "30%",
+        }
+      }
+    >
+      1
+    </span>
+    <span
+      style={
+        Object {
+          "width": "10%",
+        }
+      }
+    >
+      1
+    </span>
+    <span
+      style={
+        Object {
+          "width": "10%",
+        }
+      }
+    >
+      1
+    </span>
+    <span
+      style={
+        Object {
+          "width": "10%",
+        }
+      }
+    >
+      <button
+        className="button-inline "
+        onClick={[Function]}
+        type="button"
+      >
+        <i
+          className="trash alternate outline icon"
+        />
+      </button>
+    </span>
+  </div>
+  <div
+    className="table-row"
+  >
+    <span
+      style={
+        Object {
+          "width": "40%",
+        }
+      }
+    >
+      <a>
+        2
+      </a>
+    </span>
+    <span
+      style={
+        Object {
+          "width": "30%",
+        }
+      }
+    >
+      2
+    </span>
+    <span
+      style={
+        Object {
+          "width": "10%",
+        }
+      }
+    >
+      2
+    </span>
+    <span
+      style={
+        Object {
+          "width": "10%",
+        }
+      }
+    >
+      2
+    </span>
+    <span
+      style={
+        Object {
+          "width": "10%",
+        }
+      }
+    >
+      <button
+        className="button-inline "
+        onClick={[Function]}
+        type="button"
+      >
+        <i
+          className="trash alternate outline icon"
+        />
+      </button>
+    </span>
+  </div>
+</div>
+`;
