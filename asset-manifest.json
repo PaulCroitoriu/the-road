@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/PaulCroitoriu/the-road.git/static/css/main.dbc92aed.chunk.css",
+    "main.js": "/PaulCroitoriu/the-road.git/static/js/main.d11e570b.chunk.js",
+    "main.js.map": "/PaulCroitoriu/the-road.git/static/js/main.d11e570b.chunk.js.map",
+    "runtime-main.js": "/PaulCroitoriu/the-road.git/static/js/runtime-main.f878f0e9.js",
+    "runtime-main.js.map": "/PaulCroitoriu/the-road.git/static/js/runtime-main.f878f0e9.js.map",
+    "static/js/2.7b9a72c2.chunk.js": "/PaulCroitoriu/the-road.git/static/js/2.7b9a72c2.chunk.js",
+    "static/js/2.7b9a72c2.chunk.js.map": "/PaulCroitoriu/the-road.git/static/js/2.7b9a72c2.chunk.js.map",
+    "static/js/3.1db574c6.chunk.js": "/PaulCroitoriu/the-road.git/static/js/3.1db574c6.chunk.js",
+    "static/js/3.1db574c6.chunk.js.map": "/PaulCroitoriu/the-road.git/static/js/3.1db574c6.chunk.js.map",
+    "index.html": "/PaulCroitoriu/the-road.git/index.html",
+    "static/css/main.dbc92aed.chunk.css.map": "/PaulCroitoriu/the-road.git/static/css/main.dbc92aed.chunk.css.map",
+    "static/js/2.7b9a72c2.chunk.js.LICENSE.txt": "/PaulCroitoriu/the-road.git/static/js/2.7b9a72c2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f878f0e9.js",
+    "static/js/2.7b9a72c2.chunk.js",
+    "static/css/main.dbc92aed.chunk.css",
+    "static/js/main.d11e570b.chunk.js"
+  ]
+}
